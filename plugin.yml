@@ -1,0 +1,7 @@
+name: FirstSpout
+
+main: meta1203.FirstSpout.FirstSpout
+
+version: 0.1
+
+depend: [Spout]
