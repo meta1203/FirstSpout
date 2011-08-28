@@ -5,3 +5,8 @@ main: meta1203.FirstSpout.FirstSpout
 version: 0.1
 
 depend: [Spout]
+
+commands:
+    sendpacket:
+        description: Send the Block Packet
+        usage: /sendpacket

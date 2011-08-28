@@ -24,23 +24,7 @@ public class FirstSpoutPlayerListener extends PlayerListener {
     public FirstSpoutPlayerListener(FirstSpout instance) {
         plugin = instance;
     }
-
-    //Insert Player related code here
     
-    public void onPlayerLogin(PlayerLoginEvent event) {
-    	SpoutPlayer scp = SpoutManager.getPlayer(event.getPlayer());
-    	PacketBlockTextures pbt = new PacketBlockTextures(101, new int[] {1,2,3,4,5,6}, (byte)7, (byte)22);
-    	System.out.println("Player joined, sending block info:");
-    	if (pbt == null) {
-    		System.out.println("Huh?");
-    		return;
-    	}
-    	if (scp == null) {
-    		System.out.println("Huh 2.0!");
-    		return;
-    	}
-    	
-    	scp.sendPacket(pbt);
-    }
+    //Insert Player related code here
 }
 
